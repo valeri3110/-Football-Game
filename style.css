@@ -1,0 +1,88 @@
+.gameTitle {
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@font-face {
+  font-family: "JunegullRegular";
+  src: url("fonts/JunegullRegular.eot");
+  src: url("fonts/JunegullRegular.eot") format("embedded-opentype"),
+    url("fonts/JunegullRegular.woff2") format("woff2"),
+    url("fonts/JunegullRegular.woff") format("woff"),
+    url("fonts/JunegullRegular.ttf") format("truetype"),
+    url("fonts/JunegullRegular.svg#JunegullRegular") format("svg");
+}
+h1 {
+  text-align: center;
+  font-family: "JunegullRegular";
+  font-size: 50px;
+  color: #a00c0c;
+  line-height: 10px;
+}
+h2 {
+  text-align: center;
+  font-family: "JunegullRegular";
+  font-size: 25px;
+}
+.player1 {
+  color: #a00c0c;
+  font-size: 50px;
+  line-height: 0px;
+}
+.player2 {
+  color: #a00c0c;
+  font-size: 50px;
+  line-height: 0px;
+}
+p {
+  text-align: center;
+  font-size: 25px;
+}
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.field {
+  flex-direction: column;
+  width: 800px;
+  height: 500px;
+  background-color: #519251;
+  border: 5px solid black;
+}
+.gate {
+  width: 200px;
+}
+.ball {
+  position: absolute;
+  top: auto;
+  left: auto;
+  width: 100px;
+  transition: all 1s;
+  display: block;
+}
+.container {
+  position: relative;
+  width: 60%;
+  margin: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: none
+}
+.winImage {
+  display: block;
+  width: 500px;
+}
+.restartButton {
+  position: absolute;
+  display: block;
+  height: 80px;
+  width: 160px;
+  left: 35%;
+  top: 7%;
+  background-color: #a00c0c;
+  border-radius: 12px;
+  font-family: "JunegullRegular";
+  font-size: 25px;
+}
